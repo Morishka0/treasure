@@ -17,7 +17,7 @@ const config = {
     filename: 'index.js',
     path: PATHS.dist,
   },
-
+  devtool: 'inline-source-map',
   externals: {
     path: PATHS,
   },
@@ -30,7 +30,7 @@ const config = {
     rules: [
       {
         test: /\.tsx?$/,
-        use: 'ts-loader',
+        use: ['ts-loader'],
         exclude: '/node_modules/',
       },
 
@@ -56,7 +56,7 @@ const config = {
 
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/,
-        type: 'asset',
+        type: 'asset/resource',
         generator: {
           filename: `${PATHS.assets}/images/[name][ext]`,
         },

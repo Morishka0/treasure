@@ -1,0 +1,47 @@
+@import '../../styles/vars';
+
+.nav {
+  &__inner {
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+  }
+
+  &Item {
+    overflow: hidden;
+  }
+
+  &Link {
+    font-weight: bold;
+    background-color: $main-color;
+    text-transform: uppercase;
+    padding: 5px 40px;
+    color: $white;
+    text-decoration: none;
+    position: relative;
+
+    &:before {
+      border-right: 1px solid $white;
+      width: 50px;
+      height: 30px;
+      content: '';
+      position: absolute;
+      transform: rotate(50deg);
+      left: -31px;
+      top: -20px;
+      background: $white;
+    }
+
+    &:after {
+      border-left: 1px solid $white;
+      width: 50px;
+      height: 30px;
+      content: '';
+      position: absolute;
+      transform: rotate(50deg);
+      right: -31px;
+      bottom: -20px;
+      background: $white;
+    }
+  }
+}

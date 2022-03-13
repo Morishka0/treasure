@@ -1,2 +1,12 @@
-*,*::after,*::before{margin:0;padding:0}
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap);
+*,*::after,*::before{margin:0;padding:0;box-sizing:border-box}body{font-family:'Montserrat', sans-serif}.container{max-width:1380px;margin:0 auto;padding:0 20px}
+
+
+
+
+.k5rxhHqufc0wTH_iRBgY{height:65px;display:flex;align-items:center}.PmVdJ0aKPGnu6GUYsgiN{width:100%;display:flex;justify-content:space-between}
+
+
+.UBDxb8hHvk9HEpDX1BOv{display:flex;align-items:center;column-gap:30px}.RB6JMqm4zrSWBTcrFChW{overflow:hidden}.sLUNVwQXI06uWntU_ZPE{font-weight:bold;background-color:#6b08ba;text-transform:uppercase;padding:5px 40px;color:#fff;text-decoration:none;position:relative}.sLUNVwQXI06uWntU_ZPE:before{border-right:1px solid #fff;width:50px;height:30px;content:'';position:absolute;transform:rotate(50deg);left:-31px;top:-20px;background:#fff}.sLUNVwQXI06uWntU_ZPE:after{border-left:1px solid #fff;width:50px;height:30px;content:'';position:absolute;transform:rotate(50deg);right:-31px;bottom:-20px;background:#fff}
+
 
