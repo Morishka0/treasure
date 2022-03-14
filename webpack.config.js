@@ -49,7 +49,15 @@ const config = {
         test: /\.(scss|css)$/,
         use: [
           MiniCssExtractPlugin.loader,
-          'css-loader',
+          {
+            loader: 'css-loader',
+            options: {
+              modules: {
+                mode: 'local',
+                localIdentName: '[name]__[local]-[hash:base64:5]',
+              },
+            },
+          },
           {
             loader: 'resolve-url-loader',
             options: {
