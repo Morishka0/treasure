@@ -1,13 +1,18 @@
 @import url(https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap);
-*,*::after,*::before{margin:0;padding:0;box-sizing:border-box}body{font-family:'Montserrat', sans-serif}.container{max-width:1380px;margin:0 auto;padding:0 20px}
+*,*::after,*::before{margin:0;padding:0;box-sizing:border-box}body{font-family:'Montserrat', sans-serif}.container{max-width:1380px;margin:0 auto;padding:0 20px}.page{padding-top:80px}
 
 
 
 
-.k5rxhHqufc0wTH_iRBgY{height:65px;display:flex;align-items:center}.PmVdJ0aKPGnu6GUYsgiN{width:100%;display:flex;justify-content:space-between}
 
 
-.UBDxb8hHvk9HEpDX1BOv{display:flex;align-items:center;column-gap:30px}.RB6JMqm4zrSWBTcrFChW{overflow:hidden}.sLUNVwQXI06uWntU_ZPE{font-weight:bold;background-color:#6b08ba;text-transform:uppercase;padding:5px 40px;color:#fff;text-decoration:none;position:relative}.sLUNVwQXI06uWntU_ZPE:before{border-right:1px solid #fff;width:50px;height:30px;content:'';position:absolute;transform:rotate(50deg);left:-31px;top:-20px;background:#fff}.sLUNVwQXI06uWntU_ZPE:after{border-left:1px solid #fff;width:50px;height:30px;content:'';position:absolute;transform:rotate(50deg);right:-31px;bottom:-20px;background:#fff}
+.Header-module__header-k5rxh{width:100%;position:absolute;top:0;right:0;left:0}.Header-module__header__inner-PmVdJ{height:65px;width:100%;display:flex;justify-content:space-between;align-items:center}
+
+.Logo-module__logo__link-GbQ7N{height:inherit}
+
+.Nav-module__nav-jNadF{display:flex;align-items:center}.Nav-module__nav__inner-UBDxb{display:flex;align-items:center;column-gap:30px}.Nav-module__navLink-sLUNV{text-decoration:none}
+
+.Link-module__link-bnulR{font-weight:bold;background-color:#6b08ba;text-transform:uppercase;padding:5px 40px;color:#fff;position:relative;text-decoration:none;transition:all 0.2s linear}.Link-module__link-bnulR::before,.Link-module__link-bnulR:after{content:'';display:inline-block;position:absolute;top:0;bottom:0}.Link-module__link-bnulR::before{transform:rotate(-90deg);left:0;border-right:30px solid #fff;border-bottom:30px solid transparent}.Link-module__link-bnulR::after{transform:rotate(-90deg);right:0;border-left:30px solid #fff;border-top:30px solid transparent}.Link-module__link-bnulR.Link-module__active-EI8y_{background-color:#000}
 
 
 

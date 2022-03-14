@@ -80,6 +80,14 @@ const config = {
           filename: `${PATHS.assets}/images/[name][ext]`,
         },
       },
+
+      {
+        test: /\.(woff(2)?|ttf|eot)$/,
+        type: 'asset/resource',
+        generator: {
+          filename: `${PATHS.assets}fonts/[name][ext]`,
+        },
+      },
     ],
   },
 
