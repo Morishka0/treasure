@@ -7,6 +7,7 @@ import Delivery from './components/Delivery/Delivery';
 import Landing from './components/Landing/Landing';
 import Layout from './components/Layout/Layout';
 import Profile from './components/Profile/Profile';
+import Search from './components/Search/Search';
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
           <Route path="/delivery" element={<Delivery />} />
           <Route path="/contacts" element={<Contacts />} />
           <Route path="/cart" element={<Cart />} />
+          <Route path="/search" element={<Search />} />
           <Route path="/profile" element={<Profile />} />
         </Route>
       </Routes>
