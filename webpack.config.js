@@ -16,10 +16,13 @@ const config = {
   output: {
     filename: 'index.js',
     path: PATHS.dist,
+    clean: true,
   },
-  devtool: 'inline-source-map',
+
+  devtool: 'source-map',
   externals: {
     path: PATHS,
+
   },
 
   resolve: {
@@ -29,9 +32,18 @@ const config = {
   module: {
     rules: [
       {
-        test: /\.tsx?$/,
-        use: ['ts-loader'],
-        exclude: '/node_modules/',
+        test: /\.(ts|js)x?$/,
+        exclude: /node_modules/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: [
+              '@babel/preset-env',
+              '@babel/preset-react',
+              '@babel/preset-typescript',
+            ],
+          },
+        },
       },
 
       {
