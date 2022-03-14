@@ -9,8 +9,8 @@ import Landing from './components/Landing/Landing';
 const App = () => {
   return (
     <div className="app">
+      <Header />
       <div className="container">
-        <Header />
         <div className="page">
           <Routes>
             <Route path="/" element={<Landing />} />

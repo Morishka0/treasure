@@ -5,12 +5,14 @@ import Nav from '../Nav/Nav';
 const Header = () => {
   return (
     <header className={classes.header}>
-      <div className={classes.header__inner}>
-        <div className={classes.header__logo}>
-          <Logo />
-        </div>
-        <div className={classes.header__nav}>
-          <Nav />
+      <div className="container">
+        <div className={classes.header__inner}>
+          <div className={classes.header__logo}>
+            <Logo />
+          </div>
+          <div className={classes.header__nav}>
+            <Nav />
+          </div>
         </div>
       </div>
     </header>

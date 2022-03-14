@@ -1,11 +1,11 @@
 .header {
-  height: 65px;
+  width: 100%;
   position: absolute;
   top: 0;
   right: 0;
   left: 0;
-  display: flex;
   &__inner {
+    height: 65px;
     width: 100%;
     display: flex;
     justify-content: space-between;
