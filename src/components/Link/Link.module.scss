@@ -21,7 +21,7 @@
 
   &::before {
     transform: rotate(-90deg);
-    left: 0;
+    left: -6px;
     border-right: 30px solid $white;
     border-bottom: 30px solid transparent;
   }
