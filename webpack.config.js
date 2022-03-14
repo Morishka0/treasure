@@ -74,11 +74,17 @@ const config = {
       },
 
       {
-        test: /\.(png|svg|jpg|jpeg|gif)$/,
+        test: /\.(png|jpg|jpeg|gif)$/,
         type: 'asset/resource',
         generator: {
           filename: `${PATHS.assets}/images/[name][ext]`,
         },
+      },
+
+      {
+        test: /\.svg$/,
+        use: ['@svgr/webpack'],
+        issuer: /\.(ts|js)x?$/,
       },
 
       {

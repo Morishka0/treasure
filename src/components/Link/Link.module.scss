@@ -4,9 +4,6 @@
   font-family: robo;
   transition: all 0.2s linear;
 
-  &.active {
-  }
-
   &.active path {
     stroke: $black;
   }
