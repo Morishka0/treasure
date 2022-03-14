@@ -1,0 +1,11 @@
+@import '../../styles/vars';
+
+.page {
+  padding-top: $header-height + 155px;
+  min-height: 100vh;
+  &_hasBackground {
+    width: 100%;
+    background: url('./images/background.png') top right no-repeat;
+    background-size: auto;
+  }
+}

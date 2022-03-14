@@ -1,0 +1,10 @@
+@import '../../styles/vars';
+.introItem {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 10px;
+  border: 2px solid $main-color;
+  padding: 60px;
+  padding-top: 30px;
+  border-radius: 5px;
+}

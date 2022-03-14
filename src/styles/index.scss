@@ -1,11 +1,21 @@
-
 @import './fonts';
+@import './vars';
 *,
 *::after,
 *::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+  background: $black;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $main-color;
+  border-radius: 10px;
 }
 
 body {
@@ -16,8 +26,4 @@ body {
   max-width: 1380px;
   margin: 0 auto;
   padding: 0 20px;
-}
-
-.page {
-  padding-top: 80px;
 }

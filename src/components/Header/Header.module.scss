@@ -1,11 +1,13 @@
+@import '../../styles/vars';
 .header {
   width: 100%;
   position: absolute;
   top: 0;
   right: 0;
   left: 0;
+  background-color: $white;
   &__inner {
-    height: 65px;
+    height: $header-height;
     width: 100%;
     display: flex;
     justify-content: space-between;

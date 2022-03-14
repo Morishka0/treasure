@@ -1,0 +1,25 @@
+.introImage {
+  position: relative;
+
+  &__container {
+    position: relative;
+    z-index: 50;
+    width: 470px;
+    height: 470px;
+    overflow: hidden;
+  }
+
+  &__bottomDecoration {
+    position: absolute;
+    bottom: -30px;
+    left: -50px;
+    z-index: 15;
+  }
+
+  &__sideDecoration {
+    position: absolute;
+    z-index: 10;
+    bottom: -50px;
+    left: -20px;
+  }
+}
