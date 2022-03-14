@@ -4,20 +4,23 @@ import { NavLink } from 'react-router-dom';
 
 type PropsType = {
   to: string;
-  children: string;
+  children: string | React.ReactNode;
+  filled?: boolean;
 };
 
-const Link: FC<PropsType> = ({ to, children }) => {
-  const isActiveClass = ({ isActive }: { isActive: boolean }) => {
-    let classNames = `${classes.link}`;
+const Link: FC<PropsType> = ({ to, children, filled }) => {
+  const setClasses = ({ isActive }: { isActive: boolean }) => {
+    const classNames = [classes.link];
     if (isActive) {
-      classNames += ` ${classes.active}`;
+      classNames.push(classes.active);
     }
-
-    return classNames;
+    if (filled) {
+      classNames.push(classes.link_filled);
+    }
+    return classNames.join(' ');
   };
   return (
-    <NavLink to={to} className={isActiveClass}>
+    <NavLink to={to} className={setClasses}>
       {children}
     </NavLink>
   );

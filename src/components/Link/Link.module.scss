@@ -2,37 +2,47 @@
 
 .link {
   font-family: robo;
-  font-weight: bold;
-  background-color: $main-color;
-  text-transform: uppercase;
-  padding: 5px 40px;
-  color: $white;
-  position: relative;
-  text-decoration: none;
   transition: all 0.2s linear;
-  &::before,
-  &:after {
-    content: '';
-    display: inline-block;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-  }
 
-  &::before {
-    transform: rotate(-90deg);
-    left: -6px;
-    border-right: 30px solid $white;
-    border-bottom: 30px solid transparent;
-  }
-
-  &::after {
-    transform: rotate(-90deg);
-    right: 0;
-    border-left: 30px solid $white;
-    border-top: 30px solid transparent;
-  }
   &.active {
-    background-color: #000;
+  }
+
+  &.active path {
+    stroke: $black;
+  }
+
+  &_filled {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $white;
+    padding: 5px 40px;
+    background-color: $main-color;
+    position: relative;
+    font-weight: bold;
+    &::before,
+    &:after {
+      content: '';
+      display: inline-block;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+    }
+
+    &::before {
+      transform: rotate(-90deg);
+      left: -6px;
+      border-right: 30px solid $white;
+      border-bottom: 30px solid transparent;
+    }
+
+    &::after {
+      transform: rotate(-90deg);
+      right: 0;
+      border-left: 30px solid $white;
+      border-top: 30px solid transparent;
+    }
+    &.active {
+      background-color: $black;
+    }
   }
 }

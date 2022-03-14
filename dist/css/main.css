@@ -1,5 +1,5 @@
-@import url(https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap);
-*,*::after,*::before{margin:0;padding:0;box-sizing:border-box}body{font-family:'Montserrat', sans-serif}.container{max-width:1380px;margin:0 auto;padding:0 20px}.page{padding-top:80px}
+@font-face{font-family:Robo;src:url(../assetsfonts/robo.ttf);font-weight:bold}@font-face{font-family:Montserrat;src:url(../assetsfonts/Montserrat-Regular.ttf);font-weight:normal}@font-face{font-family:Montserrat;src:url(../assetsfonts/Montserrat-Bold.ttf);font-weight:bold}*,*::after,*::before{margin:0;padding:0;box-sizing:border-box}body{font-family:'Montserrat', sans-serif}.container{max-width:1380px;margin:0 auto;padding:0 20px}.page{padding-top:80px}
+
 
 
 
@@ -12,7 +12,8 @@
 
 .Nav-module__nav-jNadF{display:flex;align-items:center}.Nav-module__nav__inner-UBDxb{display:flex;align-items:center;column-gap:30px}.Nav-module__navLink-sLUNV{text-decoration:none}
 
-.Link-module__link-bnulR{font-weight:bold;background-color:#6b08ba;text-transform:uppercase;padding:5px 40px;color:#fff;position:relative;text-decoration:none;transition:all 0.2s linear}.Link-module__link-bnulR::before,.Link-module__link-bnulR:after{content:'';display:inline-block;position:absolute;top:0;bottom:0}.Link-module__link-bnulR::before{transform:rotate(-90deg);left:0;border-right:30px solid #fff;border-bottom:30px solid transparent}.Link-module__link-bnulR::after{transform:rotate(-90deg);right:0;border-left:30px solid #fff;border-top:30px solid transparent}.Link-module__link-bnulR.Link-module__active-EI8y_{background-color:#000}
+.Link-module__link-bnulR{font-family:robo;transition:all 0.2s linear}.Link-module__link-bnulR.Link-module__active-EI8y_ path{stroke:#161616}.Link-module__link_filled-Bj8Lj{text-decoration:none;text-transform:uppercase;color:#fff;padding:5px 40px;background-color:#6b08ba;position:relative;font-weight:bold}.Link-module__link_filled-Bj8Lj::before,.Link-module__link_filled-Bj8Lj:after{content:'';display:inline-block;position:absolute;top:0;bottom:0}.Link-module__link_filled-Bj8Lj::before{transform:rotate(-90deg);left:-6px;border-right:30px solid #fff;border-bottom:30px solid transparent}.Link-module__link_filled-Bj8Lj::after{transform:rotate(-90deg);right:0;border-left:30px solid #fff;border-top:30px solid transparent}.Link-module__link_filled-Bj8Lj.Link-module__active-EI8y_{background-color:#161616}
+
 
 
 

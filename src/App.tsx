@@ -1,10 +1,12 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
+import Cart from './components/Cart/Cart';
 import Catalog from './components/Catalog/Catalog';
 import Contacts from './components/Contacts/Contacts';
 import Delivery from './components/Delivery/Delivery';
 import Landing from './components/Landing/Landing';
 import Layout from './components/Layout/Layout';
+import Profile from './components/Profile/Profile';
 
 const App = () => {
   return (
@@ -15,6 +17,8 @@ const App = () => {
           <Route path="/catalog" element={<Catalog />} />
           <Route path="/delivery" element={<Delivery />} />
           <Route path="/contacts" element={<Contacts />} />
+          <Route path="/cart" element={<Cart />} />
+          <Route path="/profile" element={<Profile />} />
         </Route>
       </Routes>
     </div>
