@@ -1,0 +1,33 @@
+@import '../../styles/vars';
+
+.button {
+  font-weight: bold;
+  background-color: $main-color;
+  text-transform: uppercase;
+  padding: 5px 40px;
+  color: $white;
+  position: relative;
+
+  &::before,
+  &:after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+  }
+
+  &::before {
+    transform: rotate(-90deg);
+    left: 0;
+    border-right: 30px solid $white;
+    border-bottom: 30px solid transparent;
+  }
+
+  &::after {
+    transform: rotate(-90deg);
+    right: 0;
+    border-left: 30px solid $white;
+    border-top: 30px solid transparent;
+  }
+}

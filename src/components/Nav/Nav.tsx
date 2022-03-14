@@ -1,6 +1,7 @@
 import classes from './Nav.module.scss';
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Button from '../Button/Button';
 
 const Nav = () => {
   return (
@@ -8,17 +9,17 @@ const Nav = () => {
       <div className={classes.nav__inner}>
         <div className={classes.navItem}>
           <Link to="catalog" className={classes.navLink}>
-            Каталог
+            <Button>Каталог</Button>
           </Link>
         </div>
         <div className={classes.navItem}>
           <Link to="delivery" className={classes.navLink}>
-            Доставка
+            <Button>Доставка</Button>
           </Link>
         </div>
         <div className={classes.navItem}>
           <Link to="contacts" className={classes.navLink}>
-            Контакты
+            <Button>Контакты</Button>
           </Link>
         </div>
       </div>
