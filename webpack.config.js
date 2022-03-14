@@ -22,7 +22,6 @@ const config = {
   devtool: 'source-map',
   externals: {
     path: PATHS,
-
   },
 
   resolve: {

@@ -12,6 +12,7 @@ const devConfig = merge(baseConfig, {
     hot: true,
     port: 8080,
     open: false,
+    historyApiFallback: true,
   },
 });
 
