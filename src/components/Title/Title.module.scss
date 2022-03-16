@@ -3,4 +3,23 @@
 .title {
   font-family: robo;
   font-size: 42px;
+  position: relative;
+  &::after,
+  &::before {
+    content: '';
+    background: url('./images/title-decoration.svg');
+    position: absolute;
+    width: 60px;
+    height: 5px;
+    top: 50%;
+    transform: translateX(-50%);
+  }
+
+  &::after {
+    right: -90px;
+  }
+
+  &::before {
+    left: -30px;
+  }
 }

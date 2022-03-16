@@ -91,7 +91,7 @@ const config = {
         test: /\.(woff(2)?|ttf|eot)$/,
         type: 'asset/resource',
         generator: {
-          filename: `${PATHS.assets}fonts/[name][ext]`,
+          filename: `${PATHS.assets}/fonts/[name][ext]`,
         },
       },
     ],

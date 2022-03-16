@@ -13,7 +13,7 @@ const App = () => {
   return (
     <div className="app">
       <Routes>
-        <Route path="/" element={<Layout hasBackground={true} />}>
+        <Route path="/" element={<Layout />}>
           <Route path="/" element={<Landing />} />
           <Route path="/catalog" element={<Catalog />} />
           <Route path="/delivery" element={<Delivery />} />

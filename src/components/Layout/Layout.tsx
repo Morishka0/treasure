@@ -4,22 +4,12 @@ import Footer from '../Footer/Footer';
 import Header from '../Header/Header';
 import classes from './Layout.module.scss';
 
-type PropsType = {
-  hasBackground: boolean;
-};
-const Layout: FC<PropsType> = ({ hasBackground }) => {
-  const pageClasses = [classes.page];
-  if (hasBackground) {
-    pageClasses.push(classes.page_hasBackground);
-  }
-
+const Layout: FC = () => {
   return (
     <div className={classes.layout}>
       <Header />
-      <div className={pageClasses.join(' ')}>
-        <div className="container">
-          <Outlet />
-        </div>
+      <div className={classes.page}>
+        <Outlet />
       </div>
       <Footer />
     </div>

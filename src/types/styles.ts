@@ -1,7 +1,14 @@
 
 
-type ColorsType = 'dart' | 'light';
+type ColorsType = 'dark' | 'light';
 
+type DirectionType = 'right' | 'bottom';
+
+
+enum Directions {
+  right = 'right',
+  bottom = 'bottom'
+}
 
 enum Colors {
   dark = 'dark',
@@ -10,4 +17,5 @@ enum Colors {
 
 
 
-export { ColorsType, Colors };
+
+export { ColorsType, Colors, DirectionType, Directions };

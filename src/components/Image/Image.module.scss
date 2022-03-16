@@ -1,0 +1,11 @@
+.image {
+  position: relative;
+
+  &__container {
+    position: relative;
+    z-index: 50;
+    width: 470px;
+    height: 470px;
+    overflow: hidden;
+  }
+}

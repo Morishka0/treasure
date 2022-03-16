@@ -1,0 +1,49 @@
+@import '../../styles/vars';
+.intro {
+  height: inherit;
+  display: block;
+  &__inner {
+    height: inherit;
+    display: grid;
+    grid-template-columns: 690px 1fr;
+  }
+  &__info {
+    padding-top: 135px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__slogan {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 72px;
+    margin-bottom: 20px;
+  }
+  &__title {
+    text-align: center;
+    margin-bottom: 55px;
+  }
+  &__description {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    max-width: 400px;
+    margin-bottom: 10px;
+  }
+
+  &__arrow {
+    align-self: center;
+  }
+  &__image {
+    img {
+      display: block;
+    }
+  }
+  &_first {
+    background: url('./images/first-background.png') bottom no-repeat;
+    background-size: contain;
+  }
+  &_second {
+    background: url('./images/second-background.png') bottom no-repeat;
+  }
+}
