@@ -2,6 +2,8 @@
 .intro {
   height: inherit;
   display: block;
+  overflow: hidden;
+  width: 100%;
   &__inner {
     height: inherit;
     display: grid;
